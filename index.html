@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan Fokin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C5FCF5;
+        }
+
+        .container {
+            width: 900px;
+            margin: 20px auto;
+            background: #C5FCF5;
+            padding: 20px 30px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 6px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formularz zgłoszeniowy do drużyny E-sportowej</h2>
+
+    <form>
+        <div class="form-grid">
+            <div>
+
+                <div class="section">
+                    <label>Imię i nazwisko:
+                        <input type="text" name="name">
+                    </label>
+
+                    <label>Adres e-mail:
+                        <input type="email" name="email">
+                    </label>
+                </div>
+
+                <div class="section checkbox-group">
+                    <strong>Gra, która Cię interesuje:</strong>
+                    <label><input type="checkbox"> CS2</label>
+                    <label><input type="checkbox"> LoL</label>
+                    <label><input type="checkbox"> Fortnite</label>
+                    <label><input type="checkbox"> FC 26</label>
+                    <label><input type="checkbox"> Dota 2</label>
+                </div>
+
+                <div class="section radio-group">
+                    <strong>Masz doświadczenie drużynowe?</strong>
+                    <label><input type="radio" name="exp"> Tak</label>
+                    <label><input type="radio" name="exp"> Nie</label>
+                </div>
+
+                <div class="section checkbox-group">
+                    <strong>Posiadasz konto:</strong>
+                    <label><input type="checkbox"> Steam</label>
+                    <label><input type="checkbox"> Epic Games</label>
+                    <label><input type="checkbox"> Klient LoL</label>
+                    <label><input type="checkbox"> EA Sports</label>
+                </div>
+
+                <div class="section radio-group">
+                    <strong>Twoje zainteresowania:</strong>
+                    <label><input type="radio" name="int"> Muzyka</label>
+                    <label><input type="radio" name="int"> Sport</label>
+                    <label><input type="radio" name="int"> Filmy</label>
+                    <label><input type="radio" name="int"> Gry</label>
+                    <label><input type="radio" name="int"> E-sport</label>
+                </div>
+            </div>
+
+            <div>
+
+                <div class="section">
+                    <strong>Gdzie mieszkasz?</strong>
+
+                    <label>Kraj:
+                        <select>
+                            <option>USA</option>
+                            <option selected>Polska</option>
+                            <option>Rosja</option>
+                            <option>Litwa</option>
+                        </select>
+                    </label>
+
+                    <label>Kontynent:
+                        <select>
+                            <option>Europa</option>
+                            <option>Azja</option>
+                            <option>Afryka</option>
+                        </select>
+                    </label>
+
+                    <label>Miasto:
+                        <select>
+                            <option>Gdańsk</option>
+                            <option>Warszawa</option>
+                            <option>Kraków</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="section checkbox-group">
+                    <strong>Która z tych drużyn by Cię interesowała?</strong>
+                    <label><input type="checkbox"> Vitality</label>
+                    <label><input type="checkbox"> Natus Vincere</label>
+                    <label><input type="checkbox"> FaZe Clan</label>
+                    <label><input type="checkbox"> Team Spirit</label>
+                    <label><input type="checkbox"> G2 Esports</label>
+                </div>
+
+                <div class="section">
+                    <label>Dlaczego uważasz, że powinieneś spróbować? Napisz kilka zdań:
+                        <textarea></textarea>
+                    </label>
+                </div>
+
+                <div class="section">
+                    <label>Hasło do formularza:
+                        <input type="password">
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="reset">RESET</button>
+            <button type="submit">WYŚLIJ</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
